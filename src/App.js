@@ -7,7 +7,13 @@ class App extends React.Component {
   }
 
   render() {
-    return <React.Fragment></React.Fragment>;
+    return (
+      <React.Fragment>
+        <div>
+          <h1>Brach not master</h1>
+        </div>
+      </React.Fragment>
+    );
   }
 }
 
