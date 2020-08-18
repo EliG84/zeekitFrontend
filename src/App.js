@@ -1,4 +1,7 @@
 import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import MoviewMain from './Components/MoviesMain';
+import './App.css';
 
 class App extends React.Component {
   constructor(props) {
@@ -7,7 +10,11 @@ class App extends React.Component {
   }
 
   render() {
-    return <React.Fragment></React.Fragment>;
+    return (
+      <Router>
+        <Route path={['/']} component={MoviewMain}></Route>
+      </Router>
+    );
   }
 }
 
